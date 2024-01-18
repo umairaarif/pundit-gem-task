@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Psts</h1>
+
+<div id="psts">
+  <% @psts.each do |pst| %>
+    <%= render pst %>
+    <p>
+      <%= link_to "Show this pst", pst %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New pst", new_pst_path %>
